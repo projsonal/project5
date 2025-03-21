@@ -1,48 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
 .sentences-display {
-    width: 50%;
-    height: 100%;
-    margin: 0 0 1em auto;
-    padding: 5px;
-    overflow: hidden;
-    color: grey;
-    font-size: 2rem;
-    white-space: nowrap;
-    background-color: #fff;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.5rem;
     border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .sentences-display::first-letter {
-    color: black;
-  }
-  
-  .key {
-    display: inline-block;
-    min-width: 5%;
-    height: 1.5em;
-    margin: 0.1em;
-    padding-top: 0.1em;
-    color: #000;
-    font-weight: bold;
-    font-weight: 400;
-    font-size: 1.5em;
+    background: #fff;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.key {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    font-size: 1.2rem;
     text-align: center;
-    background-color: #fff;
+    line-height: 40px;
+    background: white;
     border: 1px solid #000;
-    border-radius: 3px;
+    border-radius: 5px;
     cursor: pointer;
-  }
-  
-  .key.active {
-    color: #fff;
-    background-color: green;
-  }
-  
-  section {
-    width: 50%;
-    margin: 1rem auto;
-    color: #000;
+}
+
+.key.active {
+    background: green;
+    color: white;
+}
+
+section {
+    margin: 10px 0;
+    font-size: 1.5rem;
     font-weight: bold;
-    font-size: 2rem;
-    text-align: center;
-  }
+}
+
+button.reset {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.reset:hover {
+    background: #0056b3;
+}
